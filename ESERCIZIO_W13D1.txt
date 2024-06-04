@@ -1,0 +1,166 @@
+#Esercizio Individuiamo tre task di qualsiasi tipo (fare la spesa, studiare un concetto, riempire il serbatoio dell'auto, acquistare uno snack da un distributore automatico, o qualunque altra cosa); 
+Scriviamo un algoritmo (in forma testuale), cioè i passi necessari, per ognuno dei task selezionati.
+
+
+TASK 1 - Riempire il serbatoio dell'auto
+1. Spegnere l'auto
+2. Aprire il serbatoio
+3. Inserire il contante nel terminale
+4. Selezionare il distributore desiderata
+5. Prendere la pompa
+5. Iniziare il rifornimento
+6. Terminare il rifornimento
+7. Posare la pompa
+8. Chiudere il serbatoio
+
+TASK 2 - Acquistare uno snack 
+1. Digitare il numero desiderato 
+2. Verificare quanto costa
+3. Inserire le monete fino al raggiungimento del costo indicato
+4. Attendere la caduta del prodotto
+5. Aprire lo sportello
+6. Ritirare lo snack
+
+TASK 3 - Fare una sigaretta
+1. Prendere un filtro di spugna
+2. Prendere una cartina
+3. Prendere 1g di tabacco
+4. Adagiare il tabacco sulla cartina da sinistra
+5. Inserire il filtro di spugna a destra
+6. Rollare la cartina fino ad avere una forma omogenea 
+7. Leccare la colla sulla cartina
+8. Chiudere la sigaretta
+
+
+
+#Esercizio Abbiamo 25 studenti; memorizzare questo dato in una variabile. 
+Utilizzeremo: • l'operatore di assegnazione =
+
+
+int studenti = 25
+
+
+#Esercizio Abbiamo 25 studenti; memorizzare questo dato in una variabile e stamparla a video. Utilizzeremo: • l'operatore di assegnazione = • la funzione print()
+
+
+studenti = 25
+print(studenti)
+
+
+
+#Esercizio Abbiamo 25 studenti; memorizzare questo dato in una variabile. Arrivano altri 3 studenti; memorizzare questo dato in un'altra variabile.
+
+
+nuovi_studenti=3
+print(nuovi_studenti)
+
+
+
+#Creare una variabile che contiene la stringa "Epicode", quindi stamparla a video.
+
+
+#Esercizio Abbiamo 25 studenti; memorizzare questo dato in una variabile. Arrivano altri 3 studenti; memorizzare questo dato in un'altra variabile. Creare un'altra variabile ancora che conterrà la somma delle prime due, poi stamparla a video. Utilizzeremo: • la funzione print() per stampare a video
+
+
+studenti=25
+nuovi_studenti=3
+
+studenti_totali=studenti+nuovi_studenti
+
+print(studenti_totali)
+
+
+#Esercizio Creare una variabile che contiene la stringa "Epicode", quindi stamparla a video.
+
+x=str("Epicode")
+print(x)
+
+
+#Esercizio Abbiamo la variabile: x = 10 Incrementarla di 2 e poi moltiplicarla per 3 Usare due metodi diversi (ad esempio, uno utilizzando gli operatori di assegnazione, e uno senza)
+
+#1
+x=10
+print((x+2)*3)
+
+#2
+x=10
+x+=2
+x*=3
+print(x)
+
+#Esercizio Verificare, per ognuna delle seguenti stringhe, se il numero di caratteri è compreso tra 5 e 8: 
+• str1 = "Windows" • str2 = "Excel" • str3 = "Powerpoint" • str4 = "Word"
+
+# Definisci le stringhe
+str1 = "Windows"
+str2 = "Excel"
+str3 = "Powerpoint"
+str4 = "Word"
+
+# Funzione per verificare la lunghezza della stringa
+def verifica_lunghezza(stringa):
+  """
+  Questa funzione verifica se la lunghezza di una stringa rientra tra 5 e 8 caratteri.
+  
+  Argomenti:
+    stringa (str): La stringa da controllare.
+  
+  Restituisce:
+    bool: True se la lunghezza della stringa è compresa tra 5 e 8, False altrimenti.
+  """
+  lunghezza_stringa = len(stringa)
+  return 5 <= lunghezza_stringa <= 8
+
+# Applica la funzione verifica_lunghezza a ciascuna stringa
+risultato_str1 = verifica_lunghezza(str1)
+risultato_str2 = verifica_lunghezza(str2)
+risultato_str3 = verifica_lunghezza(str3)
+risultato_str4 = verifica_lunghezza(str4)
+
+# Stampa i risultati
+print(f"str1: {str1} - Lunghezza compresa tra 5 e 8? {risultato_str1}")
+print(f"str2: {str2} - Lunghezza compresa tra 5 e 8? {risultato_str2}")
+print(f"str3: {str3} - Lunghezza compresa tra 5 e 8? {risultato_str3}")
+print(f"str4: {str4} - Lunghezza compresa tra 5 e 8? {risultato_str4}")
+
+
+#Esercizio Calcolare e stampare a video quanti secondi ci sono in un anno non bisestile.
+
+# Definisci le variabili
+giorni_anno = 365
+ore_giorno = 24
+minuti_ora = 60
+secondi_minuto = 60
+
+# Calcola il numero totale di secondi
+secondi_totali = giorni_anno * ore_giorno * minuti_ora * secondi_minuto
+
+# Stampa il risultato
+print(f"Ci sono {secondi_totali} secondi in un anno non bisestile.")
+
+#Le stringhe f-letterali iniziano con la lettera minuscola "f" seguita da virgolette doppie che racchiudono il testo della stringa. All'interno delle virgolette, è possibile inserire espressioni Python tra parentesi graffe {} per incorporare valori dinamici nella stringa formattata.
+
+#Esercizio Abbiamo la seguente stringa: my_string = "I am studying Python" • Trasformarla in modo che tutti i caratteri siano maiuscoli (uppercase) • Trasformarla in modo che tutti i caratteri siano minuscoli (lowercase) • Sostituire la sottostringa "Python" con la stringa "a lot" • Usare il metodo .strip(); cambia qualcosa? Perché?
+
+#MAIUSC
+my_string = "I am studying Python"
+stringa_maiuscola = my_string.upper()
+print(stringa_maiuscola)
+
+#minusc
+stringa_minuscola = my_string.lower()
+print(stringa_minuscola)
+
+#replace
+stringa_sostituita = my_string.replace("Python", "a lot")
+print(stringa_sostituita)
+
+#strip
+stringa_strip = my_string.strip()
+print(stringa_strip)
+
+# Esempio con spazi vuoti
+stringa_con_spazi = "  I am studying Python  "
+stringa_strip_spazi = stringa_con_spazi.strip()
+print(stringa_strip_spazi)
+
